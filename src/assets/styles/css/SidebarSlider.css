@@ -1,0 +1,17 @@
+.author-slider {
+  width: 100%; }
+  .author-slider__slide {
+    margin: 5px;
+    height: 225px;
+    width: 225px; }
+  .author-slider__card {
+    height: 100%;
+    margin: 0 auto;
+    width: 197px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); }
+
+@media (max-width: 530px) {
+  .author-slider {
+    display: none; } }

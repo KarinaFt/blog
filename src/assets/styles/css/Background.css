@@ -1,0 +1,26 @@
+.text-white {
+  color: #ffffff; }
+
+.primary {
+  color: #9b9b9b; }
+
+.secondary {
+  color: #ff5480; }
+
+.sm-font-size {
+  font-size: 14px; }
+
+.md-font-size {
+  font-size: 16px; }
+
+.lg-second-font-size {
+  font-size: 20px; }
+
+.xxl-font-size {
+  font-size: 28px; }
+
+.xxxl-font-size {
+  font-size: 36px; }
+
+.background {
+  background-color: #1b0042; }

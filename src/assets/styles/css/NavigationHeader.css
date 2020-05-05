@@ -1,0 +1,14 @@
+.navigation-bar {
+  padding: 5px; }
+  .navigation-bar__link {
+    font-size: 16px;
+    color: #000000;
+    font-family: "Open Sans", sans-serif;
+    padding: 10px;
+    font-weight: 600;
+    text-decoration: none;
+    margin: 35px; }
+    .navigation-bar__link--hovered:hover {
+      background-color: #ff5480;
+      border-radius: 10px;
+      color: #ffffff; }

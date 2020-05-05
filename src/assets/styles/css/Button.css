@@ -1,0 +1,13 @@
+.button {
+  font-size: 24px;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  border: 0px;
+  padding: 12px 20px;
+  background-color: #ff5480;
+  border-radius: 40px; }
+
+.button--hovered:hover {
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  background-color: #e24885;
+  cursor: pointer; }

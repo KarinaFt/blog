@@ -1,0 +1,19 @@
+@import '../../assets/styles/scss/styles.scss';
+
+.footer {
+  color: $light-gray-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+
+@media (max-width: 805px) {
+  .footer {
+    flex-direction: column;
+  }
+}
+
+.footer__icon {
+  display: flex;
+}

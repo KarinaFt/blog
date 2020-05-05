@@ -1,0 +1,31 @@
+.sidebar-post {
+  display: flex;
+  padding-bottom: 25px; }
+  .sidebar-post__image {
+    width: 100%;
+    max-width: 80px;
+    height: 80px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    border-radius: 8px; }
+  .sidebar-post--small {
+    padding: 0 0 5px 10px;
+    line-height: 20px; }
+  .sidebar-post--center {
+    padding: 20px;
+    text-transform: uppercase;
+    text-align: center; }
+
+@media (max-width: 1200px) {
+  .sidebar-post--small {
+    line-height: 30px;
+    font-size: 18px; } }
+@media (max-width: 850px) {
+  .sidebar-post--small {
+    line-height: 20px; } }
+@media (max-width: 520px) {
+  .sidebar-post--small {
+    font-size: 14px;
+    line-height: 17px; } }
+.sidebar-post > div:hover {
+  color: #ff5480;
+  cursor: pointer; }

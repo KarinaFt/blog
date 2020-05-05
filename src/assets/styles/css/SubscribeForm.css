@@ -1,0 +1,14 @@
+.subscribe-input {
+  position: relative;
+  padding: 19px; }
+  .subscribe-input__email {
+    padding: 19px;
+    position: absolute;
+    left: 70px;
+    border: none;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+    width: 55%;
+    border-radius: 40px 40px 40px 40px; }
+  .subscribe-input__button {
+    position: absolute;
+    left: 390px; }

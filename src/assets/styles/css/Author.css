@@ -1,0 +1,20 @@
+.author {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  text-align: center;
+  color: #000000;
+  padding: 30px;
+  line-height: 25px;
+  font-weight: 600; }
+  .author__image {
+    padding-bottom: 20px; }
+  .author__name {
+    font-size: 18px;
+    letter-spacing: -0.11px;
+    text-transform: uppercase; }
+  .author__social {
+    font-size: 16px;
+    letter-spacing: -0.1px; }
+    .author__social > a {
+      color: #37cee6;
+      text-decoration: none; }

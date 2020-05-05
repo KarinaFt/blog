@@ -1,0 +1,9 @@
+.user {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  background-color: #ffffff;
+  padding: 40px 0px 40px; }
+  .user__icons {
+    display: flex;
+    justify-content: center;
+    align-content: center; }

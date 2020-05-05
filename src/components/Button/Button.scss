@@ -1,0 +1,14 @@
+@import '../../assets/styles/scss/styles.scss';
+
+.button{
+  @include text-styles ($xl-font-size, $white-color);
+  border: 0px;
+  padding: 12px 20px;
+  background-color: $pink;
+  border-radius: 40px;
+}
+.button--hovered:hover{
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  background-color: #e24885;
+  cursor: pointer;
+}

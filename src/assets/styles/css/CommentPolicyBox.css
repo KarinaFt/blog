@@ -1,0 +1,9 @@
+.comment-policy-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0px; }
+
+@media (max-width: 335px) {
+  .comment-policy-box {
+    flex-direction: column; } }

@@ -1,0 +1,9 @@
+.title {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.22px;
+  line-height: 46px; }
+
+@media (max-width: 800px) {
+  .title {
+    line-height: 36px; } }

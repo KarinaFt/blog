@@ -1,0 +1,56 @@
+@import '../../assets/styles/scss/styles.scss';
+
+.icon {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 26px;
+  height: 25px;
+  align-items: center;
+  background-color: $light-gray-color;
+  border-radius: 25px;
+  margin: 5px;
+  font-size: $sm-font-size;
+
+  &--post-styles {
+    @extend .icon;
+    margin-bottom: 20px;
+    font-size: 22px;
+    width: 36px;
+    height: 35px;
+  }
+}
+
+@media (max-width: 1190px) {
+  .icon--post-styles {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 805px) {
+  .icon--post-styles {
+    display: none;
+  }
+}
+
+.fa {
+  &--hovered:hover {
+    color: $pink;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 600px) {
+  .fa--hovered:hover {
+    cursor: auto;
+    color: $white-color;
+  }
+  .icon__anchor {
+    cursor: auto;
+  }
+}
+
+.fa__footer {
+  width: 35px;
+  color: $white-color;
+}

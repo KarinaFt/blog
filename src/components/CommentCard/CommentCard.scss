@@ -1,0 +1,41 @@
+.comment-card {
+  padding: 30px 0px;
+  display: flex;
+
+  &__box {
+    width: 100%;
+  }
+
+  &__first-container {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  &__second-container {
+    padding-top: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .comment-card__first-container {
+    flex-direction: column;
+  }
+}
+
+.line-image {
+  padding: 20px 0px 20px;
+}
+
+@media (max-width: 800px) {
+  .line-image {
+    max-width: 100%;
+  }
+}
+
+.avatar {
+  max-width: 79px;
+  max-height: 79px;
+  border-radius: 100px;
+  margin-right: 30px;
+}

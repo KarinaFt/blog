@@ -1,0 +1,46 @@
+@import '../../assets/styles/scss/styles.scss';
+
+.outline-button {
+  font-weight: $bold-font-weight;
+  border-radius: 10px;
+  padding: 14px 15px;
+  background-color: #fafafa;
+  text-decoration: none;
+
+  &--hovered:hover {
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
+  }
+}
+
+.outline-button--pink {
+  @extend .outline-button;
+  @include text-styles($sm-font-size, $pink);
+  border: 2px solid $pink;
+  color: $pink;
+}
+
+@media (max-width: 360px) {
+  .outline-button--pink {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 335px) {
+  .outline-button--pink {
+    margin-top: 20px;
+  }
+}
+
+.outline-button--gray {
+  @extend .outline-button;
+  @include text-styles($sm-font-size, $light-gray-color);
+  border: 2px solid $border-gray-color;
+}
+
+@media (max-width: 600px) {
+  .outline-button--gray {
+    margin-top: 13px;
+    padding: 7px;
+  }
+}
+

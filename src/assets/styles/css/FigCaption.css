@@ -1,0 +1,14 @@
+.figcaption {
+  text-align: center;
+  color: #9283e0;
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.15px;
+  line-height: 58px; }
+
+@media (max-width: 680px) {
+  .figcaption {
+    font-size: 16px;
+    line-height: 35px; } }

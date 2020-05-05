@@ -1,0 +1,16 @@
+.author-theme{
+  width: 64%;
+  padding-bottom: 60px;
+}
+
+@media(max-width: 1200px){
+  .author-theme{
+    width: 100%;
+  }
+}
+
+@media(max-width: 630px){
+  .author-theme{
+    padding-bottom: 0px;
+  }
+}

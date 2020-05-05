@@ -1,0 +1,25 @@
+.main-card-page {
+  padding: 150px 0 150px;
+  max-width: 100%;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+  background-color: #1b0042; }
+
+.slider {
+  height: 70vh;
+  background-color: #1b0042;
+  color: #ffffff;
+  font-size: 36px; }
+
+.slick-dots {
+  background-color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-size: 0; }
+
+div.slick-dots {
+  display: none; }
+
+li.slick-active {
+  background-color: pink;
+  border-radius: 50%; }

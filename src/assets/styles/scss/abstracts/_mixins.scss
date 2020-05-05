@@ -1,0 +1,25 @@
+@import './variables';
+
+@mixin text-styles($font-size, $font-color) {
+  font-size: $font-size;
+  color: $font-color;
+  font-family: $open-sans-font;
+}
+
+@mixin main-card( $padding, $max-width, $bg-color) {
+  padding: $padding;
+  max-width: $max-width;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+  background-color: $bg-color;
+}
+
+@mixin thematic-blog-card( $padding) {
+  font-family: $open-sans-font;
+  padding: $padding;
+  height: 141px;
+  max-width: 236px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  background-color: $white-color;
+}
+
