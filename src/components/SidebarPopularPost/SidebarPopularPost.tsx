@@ -17,8 +17,8 @@ class SidebarPopularPost extends Component<IProps, {}> {
     };
 
     render() {
-        let renderPopularPost = this.props.popularThematicPost.map((post: any) => (
-            <div className={'sidebar-post'}>
+        let renderPopularPost = this.props.popularThematicPost.map((post: any, n:number) => (
+            <div key={n} className={'sidebar-post'}>
                 <div className={'sidebar-post__image'}/>
                 <div className={'sidebar-post__text-box'}>
 

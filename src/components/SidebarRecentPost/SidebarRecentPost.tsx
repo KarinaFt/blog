@@ -17,8 +17,8 @@ class SidebarRecentPost extends Component<IProps, {}> {
     };
 
     render() {
-        let renderRecentPost = this.props.essentialsThematicPost.map((post: any) => (
-            <div className={'sidebar-post'}>
+        let renderRecentPost = this.props.essentialsThematicPost.map((post: any, n) => (
+            <div key={n} className={'sidebar-post'}>
                 <div className={'sidebar-post__text'}>
 
                     <Content mixin={'sidebar-post--small'} primary>

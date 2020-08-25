@@ -6,6 +6,7 @@ import {Title} from '../Title/Title';
 import {Content} from '../Content/Content';
 import './PostMainCardComponent.scss'
 import {getPopularPostAction} from '../../redux/actions/getPostsActions';
+import {settingsSlider} from '../Slider/settings'
 
 interface IProps {
     getPopularPostAction?: any,
@@ -16,6 +17,7 @@ interface IProps {
 class PostMainCardComponent extends Component <IProps, {}> {
     componentDidMount() {
         this.props.getPopularPostAction();
+        settingsSlider()
     };
 
     render() {

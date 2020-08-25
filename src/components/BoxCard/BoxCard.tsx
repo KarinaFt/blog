@@ -13,5 +13,4 @@ export const BoxCard: React.FC = (props: any) => {
             </div>
         </div>
     )
-
 };

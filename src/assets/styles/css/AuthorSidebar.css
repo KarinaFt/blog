@@ -1,6 +1,7 @@
 .author-sidebar {
   width: 34%;
-  padding-left: 10px; }
+  padding-left: 10px;
+  padding-top: 30px; }
 
 @media (max-width: 1200px) {
   .author-sidebar {
