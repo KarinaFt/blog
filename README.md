@@ -1,4 +1,4 @@
-Dashboard on Netlify : https://silly-mccarthy-41db77.netlify.app
+Blog on Netlify :  https://festive-haibt-9bbeb5.netlify.app
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
