@@ -1,0 +1,34 @@
+@import '../abstracts/variables';
+
+.text-white {
+  color: $white-color;
+}
+
+.primary {
+  color: $light-gray-color;
+}
+
+.secondary {
+  color: $pink;
+}
+.sm-font-size{
+  font-size: $sm-font-size;
+}
+.md-font-size {
+  font-size: $md-font-size;
+}
+
+.lg-second-font-size {
+  font-size: $lg-second-font-size;
+}
+
+.xxl-font-size {
+  font-size: $xxl-font-size;
+}
+
+.xxxl-font-size {
+  font-size: $xxxl-font-size;
+}
+.extra-xl-font-size{
+  font-size: $extra-xl-font-size;
+}

@@ -1,0 +1,6 @@
+.search-icon--black-color {
+  padding-top: 15px; }
+
+@media (max-width: 570px) {
+  .search-icon--black-color {
+    padding: 0px; } }

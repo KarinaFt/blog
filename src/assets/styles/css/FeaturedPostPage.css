@@ -1,0 +1,13 @@
+.featured-post-page {
+  padding: 60px 0px 140px; }
+  .featured-post-page:first-child {
+    padding-right: 23px; }
+
+@media (max-width: 1190px) {
+  .featured-post-page {
+    padding: 30px; } }
+@media (max-width: 1340px) {
+  .featured-post-page {
+    display: flex;
+    text-align: center;
+    flex-direction: column; } }

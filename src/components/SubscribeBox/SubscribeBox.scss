@@ -1,0 +1,51 @@
+.subscribe-box {
+  display: flex;
+  flex-direction: column;
+  padding: 150px 0;
+  text-align: center;
+
+  &__content {
+    font-weight: 600;
+    padding: 30px 0 50px;
+  }
+
+  &__title {
+    padding: 20px 0;
+  }
+}
+
+@media(max-width: 1100px) {
+  .subscribe-box {
+    padding: 60px 0px;
+  }
+}
+
+@media(max-width: 900px) {
+  .subscribe-box {
+    display: none;
+  }
+}
+
+.subscribe-input {
+  position: relative;
+
+  &__email {
+    padding: 20px 130px 20px 15px;
+    border-radius: 40px;
+    border: none;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+    width: 35%;
+  }
+
+  &__button {
+    position: absolute;
+    right: 120px;
+    padding: 9.5px 20px;
+  }
+}
+
+@media(max-width: 1200px) {
+  .subscribe-input__button {
+    right: 170px;
+  }
+}

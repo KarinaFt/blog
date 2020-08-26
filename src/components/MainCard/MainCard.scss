@@ -1,0 +1,29 @@
+@import '../../assets/styles/scss/styles.scss';
+
+.main-card {
+  font-family: $open-sans-font;
+
+  &--hovered:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+    background-color: $violet-color-hovered;
+  }
+
+  &__title {
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .main-card--hovered:hover {
+    background-color: $violet-color;
+    box-shadow: none;
+  }
+}
+
+@media (max-width: 470px) {
+  .main-card__title {
+    font-size: $xl-font-size;
+  }
+}
+

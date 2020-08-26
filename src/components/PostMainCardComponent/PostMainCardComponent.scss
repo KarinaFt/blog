@@ -1,0 +1,33 @@
+@import '../../assets/styles/scss/styles.scss';
+
+.post-main-card {
+  padding: 40px 0px;
+  background-color: $white-color;
+
+  &__title {
+    padding: 50px 0px 40px;
+    font-weight: 700;
+  }
+
+  &__content {
+    font-weight: 600;
+    line-height: 30px;
+    padding: 10px 0px 30px 0px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .post-main-card {
+    padding: 0px 20px;
+
+    &__title {
+      font-size: $xxl-font-size;
+    }
+  }
+}
+
+@media (max-width: 470px) {
+  .post-main-card__title {
+    font-size: $xl-font-size;
+  }
+}

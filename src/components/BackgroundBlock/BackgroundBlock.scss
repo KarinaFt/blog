@@ -1,0 +1,12 @@
+@import '../../assets/styles/scss/styles.scss';
+
+.background-block {
+
+  &__new-page {
+    background-color: $white-color;
+  }
+
+  &__home-page {
+    background-color: $violet-color;
+  }
+}

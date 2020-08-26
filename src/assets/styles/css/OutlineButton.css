@@ -1,0 +1,32 @@
+.outline-button, .outline-button--pink, .outline-button--gray {
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 14px 15px;
+  background-color: #fafafa;
+  text-decoration: none; }
+  .outline-button--hovered:hover {
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.7); }
+
+.outline-button--pink {
+  font-size: 14px;
+  color: #ff5480;
+  font-family: "Open Sans", sans-serif;
+  border: 2px solid #ff5480;
+  color: #ff5480; }
+
+@media (max-width: 360px) {
+  .outline-button--pink {
+    padding: 10px; } }
+@media (max-width: 335px) {
+  .outline-button--pink {
+    margin-top: 20px; } }
+.outline-button--gray {
+  font-size: 14px;
+  color: #9b9b9b;
+  font-family: "Open Sans", sans-serif;
+  border: 2px solid #e6e6e6; }
+
+@media (max-width: 600px) {
+  .outline-button--gray {
+    margin-top: 13px;
+    padding: 7px; } }

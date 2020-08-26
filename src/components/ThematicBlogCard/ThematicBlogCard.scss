@@ -1,0 +1,53 @@
+@import '../../assets/styles/scss/styles.scss';
+
+.thematic-blog-card {
+  @include thematic-blog-card(20px);
+
+  &--hovered:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+  }
+
+  &__theme {
+    @include text-styles($md-font-size, $light-gray-color);
+    letter-spacing: -0.1px;
+    line-height: 46px;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    @include text-styles($lg-font-size, $black-color);
+    font-weight: $bold-font-weight;
+    letter-spacing: -0.11px;
+    line-height: 23px;
+
+    &--hovered:hover {
+      color: $pink;
+    }
+  }
+}
+
+@media (max-width: 1142px) {
+  .thematic-blog-card {
+    max-width: none;
+  }
+}
+@media (max-width: 850px) {
+  .thematic-blog-card {
+    max-width: none;
+    height: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .thematic-blog-card__title--hovered:hover {
+    color: black;
+  }
+}
+
+@media (max-width: 600px) {
+  .thematic-blog-card--hovered:hover {
+    color: black;
+    box-shadow: none;
+  }
+}

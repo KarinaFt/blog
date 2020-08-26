@@ -1,0 +1,15 @@
+.posts-box {
+  display: flex;
+  align-items: flex-end;
+  padding: 100px 0px; }
+
+@media (max-width: 1142px) {
+  .posts-box {
+    flex-direction: column;
+    align-items: flex-start; } }
+@media (max-width: 805px) {
+  .posts-box {
+    padding: 50px 0px; } }
+@media (max-width: 600px) {
+  .posts-box:hover * {
+    cursor: auto; } }

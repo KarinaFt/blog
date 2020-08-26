@@ -1,0 +1,24 @@
+.featured-img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 8px; }
+  .featured-img--post-styles {
+    border-radius: 8px;
+    max-width: 100%;
+    max-height: 100%; }
+  .featured-img--figure-styles {
+    border-radius: 8px;
+    max-width: 300px;
+    padding: 20px; }
+  .featured-img--hovered:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer; }
+
+.featured-img--post-styles {
+  display: block;
+  margin: 0 auto; }
+
+@media (max-width: 600px) {
+  .featured-img--hovered:hover {
+    box-shadow: none;
+    cursor: auto; } }

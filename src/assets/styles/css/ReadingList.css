@@ -1,0 +1,6 @@
+.reading-list__title {
+  padding-bottom: 40px; }
+
+@media (max-width: 470px) {
+  .reading-list__title {
+    font-size: 28px; } }

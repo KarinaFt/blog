@@ -1,0 +1,16 @@
+.main-card {
+  font-family: "Open Sans", sans-serif; }
+  .main-card--hovered:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+    background-color: #220059; }
+  .main-card__title {
+    padding-bottom: 40px; }
+
+@media (max-width: 600px) {
+  .main-card--hovered:hover {
+    background-color: #1b0042;
+    box-shadow: none; } }
+@media (max-width: 470px) {
+  .main-card__title {
+    font-size: 24px; } }

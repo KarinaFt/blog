@@ -1,0 +1,10 @@
+.inside-wrapper {
+  margin: 0 auto;
+  max-width: 773px;
+  padding-bottom: 200px; }
+
+@media (max-width: 800px) {
+  .inside-wrapper {
+    margin: 0 auto;
+    max-width: 90%;
+    padding-bottom: 100px; } }

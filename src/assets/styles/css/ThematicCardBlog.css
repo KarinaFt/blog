@@ -1,0 +1,24 @@
+.thematic-card-blog {
+  padding: 15px 7px;
+  max-width: 276px;
+  max-height: 169px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  background-color: #ffffff; }
+  .thematic-card-blog--hovered:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    cursor: pointer; }
+  .thematic-card-blog__theme {
+    font-size: 16px;
+    color: #9b9b9b;
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: -0.1px;
+    line-height: 46px;
+    text-transform: uppercase; }
+  .thematic-card-blog__title {
+    font-size: 18px;
+    color: #000000;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.11px;
+    line-height: 30px; }

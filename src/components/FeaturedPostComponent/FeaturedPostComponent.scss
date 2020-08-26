@@ -1,0 +1,29 @@
+@import '../../assets/styles/scss/styles.scss';
+
+.featured-post {
+  padding: 60px 0px 140px;
+
+  &:first-child {
+    padding-right: 23px;
+  }
+}
+
+@media (max-width: 1190px) {
+  .featured-post {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 1340px) {
+  .featured-post {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 470px) {
+  .featured-post__title {
+    font-size: $lg-font-size;
+  }
+}

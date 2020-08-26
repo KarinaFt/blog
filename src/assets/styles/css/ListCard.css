@@ -1,0 +1,24 @@
+.list-container {
+  width: 210px;
+  margin: 5px; }
+  .list-container--hovered:hover > .list-title {
+    color: #ff5480;
+    cursor: pointer; }
+
+.list-container--hovered:hover {
+  cursor: pointer; }
+
+.list-card {
+  height: 225px;
+  width: 197px;
+  margin: 0 auto;
+  border-radius: 5%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); }
+
+.list-title {
+  font-size: 22px;
+  color: inherit;
+  font-family: "Open Sans", sans-serif;
+  padding: 12px;
+  text-align: center;
+  font-weight: 700; }

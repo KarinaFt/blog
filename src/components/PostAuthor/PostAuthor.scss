@@ -1,0 +1,27 @@
+@import '../../assets/styles/scss/styles.scss';
+
+.post-author {
+  padding: 10px 0px 15px;
+  font-size: $md-font-size;
+  letter-spacing: -0.1px;
+  line-height: 46px;
+  text-transform: uppercase;
+  font-family: $open-sans-font;
+}
+@media (max-width: 800px) {
+  .post-author  {
+    line-height: 36px;
+  }
+}
+
+@media (max-width: 460px) {
+  .post-author  {
+    line-height: 26px;
+  }
+}
+
+@media (max-width: 330px) {
+  .post-author  {
+    font-size: $md-font-size
+  }
+}

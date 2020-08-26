@@ -1,0 +1,13 @@
+@import '../../assets/styles/scss/styles.scss';
+
+.checkbox{
+  display: flex;
+  align-items: center;
+  padding: 3px 0px 30px;
+}
+.checkbox__input{
+  margin-right: 8px;
+  height: 18px; width: 18px;
+  background-color: $white-color;
+  border: red;
+}

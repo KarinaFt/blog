@@ -1,0 +1,8 @@
+.content {
+  letter-spacing: -0.1px;
+  line-height: 32px;
+  font-family: "Open Sans", sans-serif; }
+
+@media (max-width: 800px) {
+  .content {
+    font-size: 14px; } }

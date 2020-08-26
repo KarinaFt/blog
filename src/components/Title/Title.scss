@@ -1,0 +1,14 @@
+@import '../../assets/styles/scss/styles.scss';
+
+.title {
+  font-family: $open-sans-font;
+  font-weight: 700;
+  letter-spacing: -0.22px;
+  line-height: 46px;
+}
+
+@media (max-width: 800px) {
+  .title {
+    line-height: 36px;
+  }
+}

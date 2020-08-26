@@ -1,0 +1,15 @@
+.logo--black-color {
+  padding-bottom: 7px; }
+
+@media (max-width: 1200px) {
+  .logo--black-color {
+    padding-left: 20px; } }
+@media (max-width: 570px) {
+  .logo--black-color {
+    vertical-align: baseline; } }
+.logo--gray-color {
+  filter: opacity(0.5); }
+
+@media (max-width: 805px) {
+  .logo--gray-color {
+    display: none; } }

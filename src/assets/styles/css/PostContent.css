@@ -1,0 +1,20 @@
+.post-content {
+  padding: 0 40px;
+  font-family: "Open Sans", sans-serif;
+  color: #4a4a4a;
+  font-size: 20px; }
+  .post-content__title {
+    padding-bottom: 10px; }
+
+@media (max-width: 1000px) {
+  .post-content {
+    padding: 0 10px; } }
+@media (max-width: 800px) {
+  .post-content {
+    padding: 0 20px; } }
+@media (max-width: 470px) {
+  .post-content__title {
+    font-size: 24px; } }
+.page-link {
+  color: #37cee6;
+  text-decoration: none; }

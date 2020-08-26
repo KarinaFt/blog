@@ -1,0 +1,14 @@
+@import '../../assets/styles/scss/styles.scss';
+
+.content {
+  letter-spacing: -0.1px;
+  line-height: 32px;
+  font-family: $open-sans-font;
+}
+
+@media (max-width: 800px) {
+  .content {
+    font-size: $sm-font-size
+  }
+}
+

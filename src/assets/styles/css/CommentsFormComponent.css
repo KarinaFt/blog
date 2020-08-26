@@ -1,0 +1,27 @@
+.comments-form {
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  display: grid;
+  width: 90%;
+  padding: 40px 0px; }
+
+@media (max-width: 500px) {
+  .comments-form__button {
+    padding: 10px 15px;
+    font-size: 18px; } }
+.textarea {
+  resize: none;
+  padding: 15px;
+  border-radius: 8px; }
+
+.link {
+  text-decoration: none;
+  color: #37cee6; }
+
+.entry-field__email {
+  padding: 15px;
+  border-radius: 8px; }
+
+.entry-field__name {
+  padding: 15px;
+  border-radius: 8px; }

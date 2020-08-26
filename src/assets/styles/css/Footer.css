@@ -1,0 +1,12 @@
+.footer {
+  color: #9b9b9b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px; }
+
+@media (max-width: 805px) {
+  .footer {
+    flex-direction: column; } }
+.footer__icon {
+  display: flex; }
