@@ -99,9 +99,9 @@ class CommentsFormComponent extends Component <IProps, IState> {
                     <Content primary mdFontSize>
                         <span>
                             I agree to the
-                            <a className='link' href='#'> Terms and Conditions </a>
+                            <a className='link' href='/'> Terms and Conditions </a>
                             <span> and </span>
-                            <a className='link' href='#'> Privacy Policy </a>
+                            <a className='link' href='/'> Privacy Policy </a>
                         </span>
                     </Content>
                 </Checkbox>
