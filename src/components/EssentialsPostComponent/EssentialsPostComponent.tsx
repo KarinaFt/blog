@@ -2,21 +2,21 @@ import React, {Component} from 'react'
 import {connect} from 'react-redux'
 import Loading from "../../components/Healpers/Loading";
 import {BoxCard} from "../BoxCard/BoxCard";
-import {getEssentialsPostAction} from '../../redux/actions/getPostsActions';
+import {getPostAction} from '../../redux/actions/getPostsActions';
 
 interface IProps {
-    getEssentialsPostAction?: any,
-    essentialsPost?: any,
+    getPostAction?: any,
+    post?: any,
     isLoading?: boolean,
 }
 
 class EssentialsPostComponent extends Component <IProps, {}> {
     componentDidMount() {
-        this.props.getEssentialsPostAction();
+        this.props.getPostAction();
     };
 
     render() {
-        let renderEssentialsPost = this.props.essentialsPost.map((post: any) => {
+        let renderEssentialsPost = this.props.post.map((post: any) => {
             return <BoxCard {...post} key={post._id}/>;
         });
 
@@ -30,13 +30,13 @@ class EssentialsPostComponent extends Component <IProps, {}> {
 
 const mapStateToProps = (state: any) => {
     return {
-        essentialsPost: state.postsReducers.essentialsPost,
+        post: state.postsReducers.post,
         isLoading: state.postsReducers.isLoading,
     };
 };
 const mapDispatchToProps = (dispatch: any) => {
     return {
-        getEssentialsPostAction: () => dispatch(getEssentialsPostAction()),
+        getPostAction: () => dispatch(getPostAction()),
     };
 };
 

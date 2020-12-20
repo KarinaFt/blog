@@ -12,7 +12,7 @@ export const PostAuthor = (props: any) => {
     return (
         <p className={`post-author ${classes}`}>
             <span>
-                By {props.author.firstName} {props.author.lastName} IN {props.tags}
+                By Vladilen IN {props.tags}
             </span>
         </p>
     )

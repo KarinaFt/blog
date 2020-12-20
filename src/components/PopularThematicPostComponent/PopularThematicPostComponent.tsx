@@ -3,21 +3,21 @@ import Loading from "../../components/Healpers/Loading";
 import {connect} from "react-redux";
 import {ThematicBlogCard} from "../ThematicBlogCard/ThematicBlogCard";
 import '../BoxCard/BoxCard.scss'
-import {getPopularThematicPostAction} from '../../redux/actions/getPostsActions';
+import {getListPostsAction} from '../../redux/actions/getPostsActions';
 
 interface IProps {
-    getPopularThematicPostAction?: any,
+    getListPostsAction?: any,
     isLoading?: boolean,
-    popularThematicPost?: any,
+    listPosts?: any,
 }
 
 class PopularThematicPostComponent extends Component <IProps, {}> {
     componentDidMount() {
-        this.props.getPopularThematicPostAction();
+        this.props.getListPostsAction();
     };
 
     render() {
-        let renderPopularThematicPost = this.props.popularThematicPost.map((post: any) =>
+        let renderPopularThematicPost = this.props.listPosts.map((post: any) =>
             <ThematicBlogCard key={post._id} {...post}/>);
 
         return (
@@ -30,13 +30,13 @@ class PopularThematicPostComponent extends Component <IProps, {}> {
 
 const mapStateToProps = (state: any) => {
     return {
-        popularThematicPost: state.postsReducers.popularThematicPost,
+        listPosts: state.postsReducers.listPosts,
         isLoading: state.postsReducers.isLoading,
     };
 };
 const mapDispatchToProps = (dispatch: any) => {
     return {
-        getPopularThematicPostAction: () => dispatch(getPopularThematicPostAction()),
+        getListPostsAction: () => dispatch(getListPostsAction()),
     };
 };
 

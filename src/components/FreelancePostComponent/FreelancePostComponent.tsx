@@ -2,21 +2,21 @@ import React, {Component} from 'react'
 import {connect} from 'react-redux'
 import Loading from '../Healpers/Loading';
 import {BoxCard} from '../BoxCard/BoxCard';
-import {getFreelancePostAction} from '../../redux/actions/getPostsActions';
+import { getPostAction} from '../../redux/actions/getPostsActions';
 
 interface IProps {
-    getFreelancePostAction?: any,
-    freelancePost?: any,
+    getPostAction?: any,
+    post?: any,
     isLoading?: boolean,
 }
 
 class FreelancePostComponent extends Component <IProps, {}> {
     componentDidMount() {
-        this.props.getFreelancePostAction()
+        this.props.getPostAction();
     };
 
     render() {
-        let renderFreelancePostPost = this.props.freelancePost.map((post: any) => {
+        let renderFreelancePostPost = this.props.post.map((post: any) => {
             return <BoxCard {...post} key={post._id}/>;
         });
 
@@ -30,13 +30,13 @@ class FreelancePostComponent extends Component <IProps, {}> {
 
 const mapStateToProps = (state: any) => {
     return {
-        freelancePost: state.postsReducers.freelancePost,
+        post: state.postsReducers.post,
         isLoading: state.postsReducers.isLoading,
     };
 };
 const mapDispatchToProps = (dispatch: any) => {
     return {
-        getFreelancePostAction: () => dispatch(getFreelancePostAction())
+        getPostAction: () => dispatch(getPostAction()),
     };
 };
 

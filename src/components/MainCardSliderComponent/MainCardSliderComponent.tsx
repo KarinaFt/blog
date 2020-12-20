@@ -3,23 +3,22 @@ import {connect} from 'react-redux'
 import Loading from "../../components/Healpers/Loading";
 import './MainCardSliderComponent.scss'
 import {MainCard} from "../MainCard/MainCard";
-import {getListPostsAction} from '../../redux/actions/getPostsActions';
+import { getPostAction} from '../../redux/actions/getPostsActions';
 
 interface IProps {
-    getListPostsAction?: any,
+    getPostAction?: any,
+    post?: any,
     isLoading?: boolean,
-    listPosts?: any,
 }
 
 class MainCardSliderComponent extends Component <IProps, {}> {
     componentDidMount() {
-        this.props.getListPostsAction();
+        this.props.getPostAction();
     };
 
     render() {
 
-
-        let renderMainCard = this.props.listPosts.map((post: any, num:number) =>
+        let renderMainCard = this.props.post.map((post: any, num:number) =>
             <div key = {num} className={'main-slider__slide'}>
                 <div className={'main-slider__slide__content'}>
                     <MainCard {...post} />
@@ -37,13 +36,13 @@ class MainCardSliderComponent extends Component <IProps, {}> {
 
 const mapStateToProps = (state: any) => {
     return {
-        listPosts: state.postsReducers.listPosts,
+        post: state.postsReducers.post,
         isLoading: state.postsReducers.isLoading,
     };
 };
 const mapDispatchToProps = (dispatch: any) => {
     return {
-        getListPostsAction: () => dispatch(getListPostsAction()),
+        getPostAction: () => dispatch(getPostAction()),
     };
 };
 

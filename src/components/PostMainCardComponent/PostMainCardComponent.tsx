@@ -5,23 +5,23 @@ import {PostAuthor} from '../PostAuthor/PostAuthor';
 import {Title} from '../Title/Title';
 import {Content} from '../Content/Content';
 import './PostMainCardComponent.scss'
-import {getPopularPostAction} from '../../redux/actions/getPostsActions';
+import { getPostAction} from '../../redux/actions/getPostsActions';
 import {settingsSlider} from '../Slider/settings'
 
 interface IProps {
-    getPopularPostAction?: any,
+    getPostAction?: any,
+    post?: any,
     isLoading?: boolean,
-    popularPost?: any,
 }
 
 class PostMainCardComponent extends Component <IProps, {}> {
     componentDidMount() {
-        this.props.getPopularPostAction();
+        this.props.getPostAction();
         settingsSlider()
     };
 
     render() {
-        let renderPopularPost = this.props.popularPost.map((post: any, num: number) => {
+        let renderPopularPost = this.props.post.map((post: any, num: number) => {
 
             return (
                 <div key={num} className="post-main-card main-card">
@@ -44,13 +44,14 @@ class PostMainCardComponent extends Component <IProps, {}> {
 
 const mapStateToProps = (state: any) => {
     return {
-        popularPost: state.postsReducers.popularPost,
+        post: state.postsReducers.post,
         isLoading: state.postsReducers.isLoading,
     };
 };
+
 const mapDispatchToProps = (dispatch: any) => {
     return {
-        getPopularPostAction: () => dispatch(getPopularPostAction()),
+        getPostAction: () => dispatch(getPostAction()),
     };
 };
 

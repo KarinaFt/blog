@@ -6,9 +6,9 @@ export const ImageBox: React.FC = (props: any) => {
     const imageFigureStyle = (props.imageFigure ? 'featured-img--figure-styles' : '');
 
     return (
-        <div key={props._id}>
+        <div key={props.id}>
             <img className={`${imagePostStyle} ${imageFigureStyle} featured-img--hovered`} alt='nature'
-                 src={(props.featuredImage)}/>
+                 src={(props.image)}/>
         </div>
     )
 }

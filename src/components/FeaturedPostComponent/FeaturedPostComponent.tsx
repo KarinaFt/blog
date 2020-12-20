@@ -6,21 +6,21 @@ import './FeaturedPostComponent.scss'
 import {Title} from "../Title/Title";
 import {Content} from "../Content/Content";
 import {PostAuthor} from "../PostAuthor/PostAuthor";
-import {getFeaturedPostAction} from '../../redux/actions/getPostsActions';
+import {getPostAction} from "../../redux/actions/getPostsActions";
 
 interface IProps {
-    getFeaturedPostAction?: any,
+    getPostAction?: any,
     isLoading?: boolean,
-    featuredPost?: any,
+    post?: any,
 }
 
 class FeaturedPostComponent extends Component <IProps, {}> {
     componentDidMount() {
-        this.props.getFeaturedPostAction();
+        this.props.getPostAction();
     };
 
     render() {
-        let renderFeaturedPost = this.props.featuredPost.map((post: any, num: number) =>
+        let renderFeaturedPost = this.props.post.map((post: any, num: number) =>
             <div className='featured-post' key={num}>
                 <ImageBox {...post}/>
 
@@ -33,7 +33,7 @@ class FeaturedPostComponent extends Component <IProps, {}> {
 
         return (
             <>
-                {this.props.isLoading ? <Loading/> : <> {renderFeaturedPost}</>}
+                {this.props.isLoading ? <Loading/> : <>{ renderFeaturedPost} </>}
             </>
         )
     }
@@ -41,13 +41,13 @@ class FeaturedPostComponent extends Component <IProps, {}> {
 
 const mapStateToProps = (state: any) => {
     return {
-        featuredPost: state.postsReducers.featuredPost,
+        post: state.postsReducers.post,
         isLoading: state.postsReducers.isLoading,
     };
 };
 const mapDispatchToProps = (dispatch: any) => {
     return {
-        getFeaturedPostAction: () => dispatch(getFeaturedPostAction()),
+        getPostAction: () => dispatch(getPostAction()),
     };
 };
 

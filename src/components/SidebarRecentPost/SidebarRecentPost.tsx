@@ -4,20 +4,20 @@ import {SidebarBox} from '../SidebarBox/SidebarBox';
 import {Content} from '../Content/Content';
 import {Title} from '../Title/Title';
 import '../SidebarPopularPost/SidebarPopularPost.scss';
-import {getEssentialsThematicPostAction} from '../../redux/actions/getPostsActions';
+import {getListPostsAction} from '../../redux/actions/getPostsActions';
 
 interface IProps {
-    getEssentialsThematicPostAction?: any,
-    essentialsThematicPost?: any
+    getListPostsAction?: any,
+    listPosts?: any,
 }
 
 class SidebarRecentPost extends Component<IProps, {}> {
     componentDidMount() {
-        this.props.getEssentialsThematicPostAction();
+        this.props.getListPostsAction();
     };
 
     render() {
-        let renderRecentPost = this.props.essentialsThematicPost.map((post: any, n) => (
+        let renderRecentPost = this.props.listPosts.map((post: any, n) => (
             <div key={n} className={'sidebar-post'}>
                 <div className={'sidebar-post__text'}>
 
@@ -46,12 +46,12 @@ class SidebarRecentPost extends Component<IProps, {}> {
 
 const mapStateToProps = (state: any) => {
     return {
-        essentialsThematicPost: state.postsReducers.essentialsThematicPost,
+        listPosts: state.postsReducers.listPosts,
     };
 };
 const mapDispatchToProps = (dispatch: any) => {
     return {
-        getEssentialsThematicPostAction: () => dispatch(getEssentialsThematicPostAction()),
+        getListPostsAction: () => dispatch(getListPostsAction())
     };
 };
 

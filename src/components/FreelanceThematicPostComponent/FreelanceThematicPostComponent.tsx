@@ -3,21 +3,21 @@ import Loading from "../../components/Healpers/Loading";
 import {connect} from "react-redux";
 import {ThematicBlogCard} from "../ThematicBlogCard/ThematicBlogCard";
 import '../../components/BoxCard/BoxCard.scss'
-import {getFreelanceThematicPostAction} from '../../redux/actions/getPostsActions';
+import { getListPostsAction} from '../../redux/actions/getPostsActions';
 
 interface IProps {
-    getFreelanceThematicPostAction?: any,
+    getListPostsAction?: any,
     isLoading?: boolean,
-    freelanceThematicPost?: any,
+    listPosts?: any,
 }
 
 class FreelanceThematicPostComponent extends Component <IProps, {}> {
     componentDidMount() {
-        this.props.getFreelanceThematicPostAction();
+        this.props.getListPostsAction();
     };
 
     render() {
-        let renderMainCard = this.props.freelanceThematicPost.map((post: any) =>
+        let renderMainCard = this.props.listPosts.map((post: any) =>
             <ThematicBlogCard key={post._id} {...post}/>);
 
         return (
@@ -30,13 +30,13 @@ class FreelanceThematicPostComponent extends Component <IProps, {}> {
 
 const mapStateToProps = (state: any) => {
     return {
-        freelanceThematicPost: state.postsReducers.freelanceThematicPost,
+        listPosts: state.postsReducers.listPosts,
         isLoading: state.postsReducers.isLoading,
     };
 };
 const mapDispatchToProps = (dispatch: any) => {
     return {
-        getFreelanceThematicPostAction: () => dispatch(getFreelanceThematicPostAction()),
+        getListPostsAction: () => dispatch(getListPostsAction()),
     };
 };
 

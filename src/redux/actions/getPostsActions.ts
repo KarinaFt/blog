@@ -1,116 +1,32 @@
 import {
     getAuthorPostReceiveAction,
     getCommentsListReceiveAction,
-    getEssentialsPostReceiveAction,
-    getEssentialsThematicPostReceiveAction,
-    getFeaturedPostReceiveAction,
-    getFreelancePostReceiveAction,
-    getFreelanceThematicPostReceiveAction,
     getListPostsFailure,
     getListPostsReceiveAction, getListPostsRequest,
-    getPopularPostReceiveAction,
-    getPopularThematicPostReceiveAction,
+    getPostReceiveAction,
     sendCommentReceiveAction
 } from './PostsActionsCreators';
 import {postsBlogService} from '../service/postsBlogService';
+
+export function getPostAction() {
+    return (dispatch: any) => {
+        dispatch(getListPostsRequest());
+        postsBlogService.getPost()
+            .then((response: any) => {
+                dispatch(getPostReceiveAction(response.data));
+            })
+            .catch(error =>
+                dispatch(getListPostsFailure(error))
+            )
+    }
+}
 
 export function getListPostsAction() {
     return (dispatch: any) => {
         dispatch(getListPostsRequest());
         postsBlogService.getListPosts()
             .then((response: any) => {
-                dispatch(getListPostsReceiveAction(response.data.docs));
-            })
-            .catch(error =>
-                dispatch(getListPostsFailure(error))
-            )
-    }
-}
-
-export function getFeaturedPostAction() {
-    return (dispatch: any) => {
-        dispatch(getListPostsRequest());
-        postsBlogService.getFeaturedPost()
-            .then((response: any) => {
-                dispatch(getFeaturedPostReceiveAction(response.data.docs));
-            })
-            .catch(error =>
-                dispatch(getListPostsFailure(error))
-            );
-    }
-}
-
-export function getPopularPostAction() {
-    return (dispatch: any) => {
-        dispatch(getListPostsRequest());
-        postsBlogService.getPopularPosts()
-            .then((response: any) => {
-                dispatch(getPopularPostReceiveAction(response.data.docs));
-            })
-            .catch(error =>
-                dispatch(getListPostsFailure(error))
-            )
-    }
-}
-
-export function getEssentialsPostAction() {
-    return (dispatch: any) => {
-        dispatch(getListPostsRequest());
-        postsBlogService.getEssentialsPost()
-            .then((response: any) => {
-                dispatch(getEssentialsPostReceiveAction(response.data.docs));
-            })
-            .catch(error =>
-                dispatch(getListPostsFailure(error))
-            )
-    }
-}
-
-export function getFreelancePostAction() {
-    return (dispatch: any) => {
-        dispatch(getListPostsRequest());
-        postsBlogService.getFreelancePost()
-            .then((response: any) => {
-                dispatch(getFreelancePostReceiveAction(response.data.docs));
-            })
-            .catch(error =>
-                dispatch(getListPostsFailure(error))
-            )
-    }
-}
-
-export function getFreelanceThematicPostAction() {
-    return (dispatch: any) => {
-        dispatch(getListPostsRequest());
-        postsBlogService.getFreelanceThematicPost()
-            .then((response: any) => {
-                dispatch(getFreelanceThematicPostReceiveAction(response.data.docs));
-            })
-            .catch(error =>
-                dispatch(getListPostsFailure(error))
-            )
-    }
-}
-
-export function getPopularThematicPostAction() {
-    return (dispatch: any) => {
-        dispatch(getListPostsRequest());
-        postsBlogService.getPopularThematicPost()
-            .then((response: any) => {
-                dispatch(getPopularThematicPostReceiveAction(response.data.docs));
-            })
-            .catch(error =>
-                dispatch(getListPostsFailure(error))
-            )
-    }
-}
-
-export function getEssentialsThematicPostAction() {
-    return (dispatch: any) => {
-        dispatch(getListPostsRequest());
-        postsBlogService.getEssentialsThematicPost()
-            .then((response: any) => {
-                dispatch(getEssentialsThematicPostReceiveAction(response.data.docs));
+                dispatch(getListPostsReceiveAction(response.data));
             })
             .catch(error =>
                 dispatch(getListPostsFailure(error))

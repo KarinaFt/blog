@@ -3,21 +3,21 @@ import Loading from "../../components/Healpers/Loading";
 import {connect} from "react-redux";
 import {ThematicBlogCard} from "../ThematicBlogCard/ThematicBlogCard";
 import '../../components/BoxCard/BoxCard.scss'
-import {getEssentialsThematicPostAction} from '../../redux/actions/getPostsActions';
+import {getListPostsAction} from '../../redux/actions/getPostsActions';
 
 interface IProps {
-    getEssentialsThematicPostAction?: any,
+    getListPostsAction?: any,
     isLoading?: boolean,
-    essentialsThematicPost?: any,
+    listPosts?: any,
 }
 
 class EssentialsThematicPostComponent extends Component <IProps, {}> {
     componentDidMount() {
-        this.props.getEssentialsThematicPostAction();
+        this.props.getListPostsAction();
     };
 
     render() {
-        let renderEssentialsThematicPost = this.props.essentialsThematicPost.map((post: any) =>
+        let renderEssentialsThematicPost = this.props.listPosts.map((post: any) =>
             <ThematicBlogCard key={post._id} {...post}/>);
 
         return (
@@ -30,14 +30,14 @@ class EssentialsThematicPostComponent extends Component <IProps, {}> {
 
 const mapStateToProps = (state: any) => {
     return {
-        essentialsThematicPost: state.postsReducers.essentialsThematicPost,
+        listPosts: state.postsReducers.listPosts,
         isLoading: state.postsReducers.isLoading,
     };
 };
 const mapDispatchToProps = (dispatch: any) => {
     return {
-        getEssentialsThematicPostAction: () => dispatch(getEssentialsThematicPostAction()),
-    };
+        getListPostsAction: () => dispatch(getListPostsAction())
+    }
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(EssentialsThematicPostComponent);

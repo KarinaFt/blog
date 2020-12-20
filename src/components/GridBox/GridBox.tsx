@@ -5,7 +5,7 @@ export const GridBox: React.FC = (props: any) => {
     const {children} = props;
 
     return (
-        <div>
+        <div className='grid'>
             <div className='grid-box'>
                 <span className='grid-box--hovered'>View all</span>
             </div>

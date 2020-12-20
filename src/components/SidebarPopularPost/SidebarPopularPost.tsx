@@ -4,20 +4,20 @@ import './SidebarPopularPost.scss';
 import {Content} from '../Content/Content';
 import {Title} from '../Title/Title';
 import {connect} from 'react-redux';
-import {getPopularThematicPostAction} from '../../redux/actions/getPostsActions';
+import { getPostAction} from '../../redux/actions/getPostsActions';
 
 interface IProps {
-    getPopularThematicPostAction?: any,
-    popularThematicPost?: any,
+    getPostAction?: any,
+    post?: any,
 }
 
 class SidebarPopularPost extends Component<IProps, {}> {
     componentDidMount() {
-        this.props.getPopularThematicPostAction();
+        this.props.getPostAction();
     };
 
     render() {
-        let renderPopularPost = this.props.popularThematicPost.map((post: any, n:number) => (
+        let renderPopularPost = this.props.post.map((post: any, n:number) => (
             <div key={n} className={'sidebar-post'}>
                 <div className={'sidebar-post__image'}/>
                 <div className={'sidebar-post__text-box'}>
@@ -47,12 +47,12 @@ class SidebarPopularPost extends Component<IProps, {}> {
 
 const mapStateToProps = (state: any) => {
     return {
-        popularThematicPost: state.postsReducers.popularThematicPost,
+        post: state.postsReducers.post,
     };
 };
 const mapDispatchToProps = (dispatch: any) => {
     return {
-        getPopularThematicPostAction: () => dispatch(getPopularThematicPostAction()),
+        getPostAction: () => dispatch(getPostAction()),
     };
 };
 
