@@ -160,7 +160,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  max-width: 250px;
+  max-width: 220px;
   width: 100%;
   padding: 50px 0 30px;
   margin: 0 auto;
@@ -172,7 +172,6 @@
 }
 
 .slick-prev {
-  left: 0 !important;
   right: 200px;
   background: url('../../assets/images/arrow-left.png') $pink center center no-repeat !important;
 }

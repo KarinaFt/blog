@@ -15,8 +15,9 @@ export function settingsSlider (){
 
         appendArrows: $('.elements'),
         prevArrow: '<button id="prev" type="button" class="slick-prev"> </button>',
-        appendDots: $('.dots-slick'),
         nextArrow: '<button id="next" type="button" class="slick-next "> </button>',
+        appendDots: $('.dots-slick'),
+
 
         responsive: [{
             breakpoint: 768,
