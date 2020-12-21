@@ -15,7 +15,7 @@ interface IProps {
 
 interface IState {
     offset?: number,
-    perPage?: any,
+    perPage?: number,
     currentPage?: number,
     pageCount?: number,
     authorPost?: any,

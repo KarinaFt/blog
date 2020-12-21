@@ -1,7 +1,14 @@
 import React from 'react'
 import './OutlineButton.scss'
 
-export const OutlineButton = (props: any) => {
+interface IProps {
+    secondary?: boolean;
+    children?: React.ReactNode
+    href?: string;
+    onClick?:any
+}
+
+export const OutlineButton = (props: IProps) => {
     const {children} = props;
     const classes = (props.secondary ? 'outline-button--pink' : 'outline-button--gray');
 

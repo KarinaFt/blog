@@ -1,6 +1,6 @@
 import React from "react";
 import './BackgroundBlock.scss';
-import {IProps} from "../../interfaces/props";
+import {IProps} from "../../interfaces/interface";
 
 export const BackgroundBlock = (props: IProps) => {
     const {children} = props;

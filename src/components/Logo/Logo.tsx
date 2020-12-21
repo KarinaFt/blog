@@ -1,7 +1,11 @@
 import React from "react";
 import './Logo.scss'
 
-export const Logo = (props) => {
+interface IProps {
+    headerElem?: boolean;
+}
+
+export const Logo = (props: IProps) => {
     const classes = (props.headerElem ? 'logo--black-color' : "logo--gray-color");
 
     return (

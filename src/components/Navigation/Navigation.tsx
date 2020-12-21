@@ -2,7 +2,12 @@ import React from 'react';
 import {NavLink} from 'react-router-dom';
 import './Navigation.scss'
 
-export const Navigation = (props) => {
+interface IProps {
+    hoverElem?: boolean;
+    mixin?: string;
+}
+
+export const Navigation = (props: IProps) => {
     const linkNavClass = (props.hoverElem
         ? 'navigation-bar__link navigation-bar__link--hovered'
         : 'navigation-bar__link');

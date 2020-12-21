@@ -1,7 +1,12 @@
 import React from 'react';
 import './Icon.scss'
 
-export const Icon = (props: any) => {
+interface IProps {
+    postElement?: boolean;
+    mixin?: string;
+}
+
+export const Icon = (props: IProps) => {
     const iconClass = (props.postElement ? 'icon--post-styles' : 'icon');
     const mixin = props.mixin;
 

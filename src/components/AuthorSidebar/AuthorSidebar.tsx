@@ -1,6 +1,6 @@
 import React from 'react';
 import './AuthorSidebar.scss'
-import {IProps} from "../../interfaces/props";
+import {IProps} from "../../interfaces/interface";
 
 
 export const AuthorSidebar: React.FC = (props: IProps) => {

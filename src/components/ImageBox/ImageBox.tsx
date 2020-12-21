@@ -1,7 +1,14 @@
 import React from 'react';
 import './ImageBox.scss'
 
-export const ImageBox: React.FC = (props: any) => {
+interface IProps {
+    imageFigure?: boolean;
+    imagePost ?: boolean;
+    mixin?: string;
+    id?:string;
+    image?:string
+}
+export const ImageBox = (props: IProps) => {
     const imagePostStyle = (props.imagePost ? 'featured-img--post-styles' : 'featured-img');
     const imageFigureStyle = (props.imageFigure ? 'featured-img--figure-styles' : '');
 

@@ -1,8 +1,9 @@
 import React from 'react';
 import './Title.scss'
 import '../../assets/styles/scss/common/_common.scss'
+import {TitleI} from '../../interfaces/interface'
 
-export const Title = (props: any) => {
+export const Title = (props: TitleI) => {
     const {children} = props;
     const mixin = props.mixin;
 

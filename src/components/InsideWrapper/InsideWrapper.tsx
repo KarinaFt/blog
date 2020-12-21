@@ -1,7 +1,8 @@
 import React from "react";
 import './InsideWrapper.scss'
+import {IProps} from "../../interfaces/interface";
 
-export const InsideWrapper = (props: any) => {
+export const InsideWrapper = (props: IProps) => {
     const {children} = props;
 
     return (

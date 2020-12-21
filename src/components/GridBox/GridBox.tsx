@@ -1,7 +1,8 @@
 import React from 'react';
 import './GridBox.scss'
+import {IProps} from "../../interfaces/interface";
 
-export const GridBox: React.FC = (props: any) => {
+export const GridBox: React.FC = (props: IProps) => {
     const {children} = props;
 
     return (
