@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 type IProps = {
-    open?: any;
-    setOpen?: any
+    open?: boolean;
+    setOpen?: boolean;
 }
 
 export const StyledBurgerMenu = styled.button <IProps>`

@@ -19,7 +19,7 @@ class CommentsListComponent extends Component <IProps, {}> {
         this.props.getCommentsListAction();
     }
 
-    getUserData(id, name) {
+    getUserData(id, name): void  {
         let userData = {id, name};
         this.props.getUserIdAction(userData)
     }

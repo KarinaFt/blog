@@ -7,7 +7,7 @@ import {connect} from 'react-redux';
 import {getUserIdAction} from '../../redux/actions/PostsActionsCreators';
 
 interface IProps {
-    getUserIdAction?: any,
+    getUserIdAction?: any
 }
 
 class CommentPolicyBox extends Component <IProps, {}> {

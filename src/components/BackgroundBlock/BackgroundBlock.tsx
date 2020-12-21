@@ -1,7 +1,8 @@
 import React from "react";
 import './BackgroundBlock.scss';
+import {IProps} from "../../interfaces/props";
 
-export const BackgroundBlock = (props: any) => {
+export const BackgroundBlock = (props: IProps) => {
     const {children} = props;
     const mixin = props.mixin;
     const classes = `${mixin}`;

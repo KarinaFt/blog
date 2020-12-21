@@ -1,7 +1,8 @@
 import React from 'react';
 import './Checkbox.scss'
+import {IProps} from "../../interfaces/props";
 
-export const Checkbox = (props: any) => {
+export const Checkbox = (props: IProps) => {
     const {children} = props;
 
     return (

@@ -1,7 +1,8 @@
 import React from "react";
 import './Box.scss'
+import {IProps} from "../../interfaces/props";
 
-export const Box: React.FC = (props:any) => {
+export const Box: React.FC = (props:IProps) => {
     const {children} = props;
 
     return (
